@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC3WxyMcWz0zCfd7nkp1ybWoIvVl-AawQU",
+            authDomain: "proyectotest-33116.firebaseapp.com",
+            projectId: "proyectotest-33116",
+            storageBucket: "proyectotest-33116.appspot.com",
+            messagingSenderId: "1030512349335",
+            appId: "1:1030512349335:web:66f483f6688df3caef19d2"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
